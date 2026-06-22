@@ -3,39 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentos legales - Russia Guide</title>
+    <title>Documentos legales – BriStore & Russia Guide</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 900px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
             background: #f9f9f9;
         }
-        h1, h2 {
-            color: #1a73e8;
-        }
         h1 {
+            color: #1a73e8;
             border-bottom: 2px solid #1a73e8;
             padding-bottom: 10px;
-            text-align: center;
         }
-        .lang-section {
+        .section {
             background: white;
             padding: 20px;
             border-radius: 8px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .lang-title {
-            font-size: 1.5em;
-            font-weight: bold;
+        .section h2 {
+            margin-top: 0;
             color: #1a73e8;
-            border-left: 5px solid #1a73e8;
-            padding-left: 15px;
-            margin-bottom: 20px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin: 8px 0;
+        }
+        .section ul li a {
+            text-decoration: none;
+            color: #1a73e8;
+            font-weight: 500;
+        }
+        .section ul li a:hover {
+            text-decoration: underline;
         }
         .footer {
             text-align: center;
@@ -43,295 +51,43 @@
             font-size: 0.9em;
             color: #666;
         }
-        hr {
-            margin: 20px 0;
-            border: 1px solid #ddd;
-        }
-        .contact-item {
-            margin: 5px 0;
-        }
-        .highlight {
-            background-color: #f0f7ff;
-            padding: 2px 5px;
-            border-radius: 4px;
+        .badge {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #1a73e8;
+            font-size: 12px;
+            padding: 2px 10px;
+            border-radius: 20px;
+            margin-left: 8px;
         }
     </style>
 </head>
 <body>
-    <h1>Russia Guide - Documentos Legales / Legal Documents / Юридические документы</h1>
+    <h1>📄 Documentos legales</h1>
+    <p>Selecciona el documento que deseas consultar:</p>
 
-    <!-- ESPAÑOL -->
-    <div class="lang-section">
-        <div class="lang-title">🇪🇸 Español</div>
-        
-        <h2>Política de Privacidad</h2>
-        <p><strong>Última actualización:</strong> 29 de mayo de 2026</p>
-        <p>Brian Valdes Gil (en adelante, "el desarrollador") opera la aplicación Russia Guide (en adelante, "la App"). Esta página informa sobre nuestras políticas respecto a la recopilación, uso y divulgación de datos personales cuando usas la App.</p>
-        
-        <h3>1. Datos que recopilamos</h3>
-        <p>La App utiliza Firebase Authentication y Firestore (Google) para gestionar usuarios y datos. Recopilamos:</p>
+    <div class="section">
+        <h2>🛒 BriStore – Tienda de software</h2>
         <ul>
-            <li><strong>Correo electrónico y contraseña</strong> (para autenticación).</li>
-            <li><strong>Nombre</strong> (opcional, solo si usas Google Sign-In).</li>
-            <li><strong>Estado premium</strong> (booleano).</li>
-            <li><strong>Clave secreta TOTP</strong> (para 2FA, almacenada cifrada en Firestore).</li>
-            <li><strong>Notas personales</strong> (almacenadas localmente en SQLite, no en la nube).</li>
-            <li><strong>Preferencia de modo oscuro</strong> (almacenada localmente en SharedPreferences).</li>
-            <li><strong>Datos de uso anónimos</strong> (mediante Firebase Analytics, para mejorar la experiencia).</li>
+            <li><a href="store-privacy.html">🔒 Política de Privacidad</a></li>
+            <li><a href="store-terms.html">⚖️ Términos de Uso</a></li>
         </ul>
-        
-        <h3>2. Uso de los datos</h3>
-        <p>Usamos los datos para:</p>
-        <ul>
-            <li>Autenticarte y controlar acceso premium.</li>
-            <li>Mejorar la App y solucionar errores.</li>
-            <li>Contactarte para asuntos relacionados con tu cuenta (solo si es necesario).</li>
-            <li>Analizar tendencias de uso y rendimiento de la app.</li>
-        </ul>
-        
-        <h3>3. Compartición de datos</h3>
-        <p>No vendemos, alquilamos ni compartimos tus datos personales con terceros, excepto para cumplir con la ley o proteger nuestros derechos. Los datos de autenticación y Firestore se almacenan en servidores de Google (Cloud) que cumplen con estándares de seguridad internacionales.</p>
-        
-        <h3>4. Seguridad</h3>
-        <p>Usamos Firebase, que implementa medidas de seguridad estándar de la industria. Las notas locales no salen de tu dispositivo. Sin embargo, ninguna transmisión por Internet es 100% segura; úsala bajo tu responsabilidad.</p>
-        
-        <h3>5. Tus derechos</h3>
-        <p>Puedes solicitar la eliminación de tu cuenta desde la App (Configuración → Eliminar cuenta). Tus datos se eliminarán de Firebase y de tu dispositivo local. También puedes solicitar acceso, rectificación o portabilidad escribiendo a bricode247@gmail.com.</p>
-        
-        <h3>6. Cookies y tecnologías similares</h3>
-        <p>La App no usa cookies en el sentido tradicional, pero Firebase Analytics puede utilizar identificadores anónimos para medir el rendimiento. Puedes desactivar el análisis desde la configuración de tu dispositivo.</p>
-        
-        <h3>7. Edad mínima</h3>
-        <p>La App no está dirigida a menores de 13 años. Si eres menor de esa edad, no debes registrarte. Los padres o tutores son responsables de supervisar el uso de la app por parte de menores.</p>
-        
-        <h3>8. Cambios a esta política</h3>
-        <p>Cualquier cambio se publicará en esta URL. El uso continuado de la App implica aceptación.</p>
-        
-        <h3>9. Contacto</h3>
-        <p>Email: bricode247@gmail.com<br>
-        Telegram: @brianvaldesgil<br>
-        Teléfono: +7 989 181 99 36</p>
-        
-        <hr>
-        
-        <h2>Términos y Condiciones de Uso</h2>
-        <p><strong>Última actualización:</strong> 29 de mayo de 2026</p>
-        
-        <h3>1. Aceptación de los términos</h3>
-        <p>Al descargar o usar Russia Guide, aceptas cumplir con estos términos. Si no estás de acuerdo, no uses la App.</p>
-        
-        <h3>2. Licencia de uso</h3>
-        <p>Se te concede una licencia limitada, no exclusiva, para usar la App para fines personales y no comerciales. No está permitido modificar, descompilar, extraer el código ni distribuir la App sin autorización escrita del desarrollador. Los contenidos (textos, imágenes, logotipos) son propiedad de Brian Valdes Gil y están protegidos por derechos de autor.</p>
-        
-        <h3>3. Contenido premium</h3>
-        <p>Algunos capítulos, el modo oscuro, los apuntes ilimitados y otras funciones son premium. El pago se gestionará mediante pasarelas transparentes y reconocidas mundialmente (Google Play, RuStore, Apple, etc.). El acceso premium es <strong>mensual (suscripción renovable automáticamente)</strong> y cubre la versión actual de la App con garantía de futuras actualizaciones. <strong>No se ofrecen reembolsos</strong> por periodos no consumidos, salvo que la ley aplicable exija lo contrario o exista un defecto técnico acreditado.</p>
-        
-        <h3>4. Exactitud de la información</h3>
-        <p>La guía se actualiza periódicamente, pero no garantizamos que toda la información esté libre de errores o esté actualizada. Es posible que algunos datos hayan quedado obsoletos. Úsala bajo tu propio criterio y contrasta la información crítica con fuentes oficiales.</p>
-        
-        <h3>5. Limitación de responsabilidad</h3>
-        <p>El desarrollador no será responsable por daños directos, indirectos o consecuentes derivados del uso o imposibilidad de usar la App, incluyendo pérdida de datos, retrasos en viajes, problemas migratorios o cualquier otro perjuicio. El usuario asume la responsabilidad de verificar la información.</p>
-        
-        <h3>6. Eliminación de cuenta</h3>
-        <p>Los usuarios pueden eliminar su cuenta desde la App (Configuración → Eliminar cuenta). El email quedará bloqueado por 30 días para evitar re-registro abusivo. Pasado ese tiempo, se permite un nuevo registro. Los datos de feedback enviados antes de la eliminación se conservan de forma anónima para mejorar el servicio.</p>
-        
-        <h3>7. Propiedad intelectual y uso indebido</h3>
-        <p>Queda prohibido reproducir, distribuir o crear obras derivadas de la App sin permiso. Las marcas "Russia Guide", el logotipo y los nombres de capítulos son propiedad del desarrollador. Cualquier infracción será perseguida legalmente.</p>
-        
-        <h3>8. Modificaciones de los términos</h3>
-        <p>Podemos actualizar estos términos en cualquier momento. Te notificaremos mediante la App o mediante un aviso en esta URL. El uso continuado después de los cambios constituye tu aceptación de los nuevos términos.</p>
-        
-        <h3>9. Ley aplicable y jurisdicción</h3>
-        <p>Estos términos se rigen por las leyes de la <strong>Federación Rusa</strong>. Para los usuarios de RuStore, cualquier disputa se someterá a los tribunales de Moscú. Para usuarios de otras tiendas, se aplicará la ley de su país de residencia, pero el desarrollador se reserva el derecho de resolver controversias en Rusia si así lo exige su protección legal.</p>
-        
-        <h3>10. Contacto</h3>
-        <p>Email: bricode247@gmail.com<br>
-        Telegram: @brianvaldesgil<br>
-        Teléfono: +7 989 181 99 36</p>
     </div>
 
-    <!-- ENGLISH -->
-    <div class="lang-section">
-        <div class="lang-title">🇬🇧 English</div>
-        
-        <h2>Privacy Policy</h2>
-        <p><strong>Last Updated:</strong> May 29, 2026</p>
-        <p>Brian Valdes Gil ("the developer") operates the Russia Guide application ("the App"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use the App.</p>
-        
-        <h3>1. Data We Collect</h3>
-        <p>The App uses Firebase Authentication and Firestore (Google) to manage users and data. We collect:</p>
+    <div class="section">
+        <h2>🇷🇺 Russia Guide – App móvil</h2>
         <ul>
-            <li><strong>Email and password</strong> (for authentication).</li>
-            <li><strong>Name</strong> (optional, only if you use Google Sign-In).</li>
-            <li><strong>Premium status</strong> (boolean).</li>
-            <li><strong>TOTP secret key</strong> (for 2FA, stored encrypted in Firestore).</li>
-            <li><strong>Personal notes</strong> (stored locally in SQLite, not in the cloud).</li>
-            <li><strong>Dark mode preference</strong> (stored locally in SharedPreferences).</li>
-            <li><strong>Anonymous usage data</strong> (via Firebase Analytics, to improve the experience).</li>
+            <li><a href="russia-guide-docs.html">🔒 Política de Privacidad</a> <span class="badge">App</span></li>
+            <li><a href="russia-guide-docs.html">⚖️ Términos de Uso</a> <span class="badge">App</span></li>
         </ul>
-        
-        <h3>2. Use of Data</h3>
-        <p>We use the data to:</p>
-        <ul>
-            <li>Authenticate you and control premium access.</li>
-            <li>Improve the App and fix errors.</li>
-            <li>Contact you regarding your account (only if necessary).</li>
-            <li>Analyze usage trends and performance.</li>
-        </ul>
-        
-        <h3>3. Data Sharing</h3>
-        <p>We do not sell, rent, or share your personal data with third parties, except to comply with the law or protect our rights. Authentication and Firestore data are stored on Google's (Cloud) servers, which comply with international security standards.</p>
-        
-        <h3>4. Security</h3>
-        <p>We use Firebase, which implements industry-standard security measures. Local notes do not leave your device. However, no internet transmission is 100% secure; use it at your own risk.</p>
-        
-        <h3>5. Your Rights</h3>
-        <p>You can delete your account from the App (Settings → Delete Account). Your data will be removed from Firebase and your local device. You may also request access, rectification, or portability by emailing bricode247@gmail.com.</p>
-        
-        <h3>6. Cookies and Similar Technologies</h3>
-        <p>The App does not use traditional cookies, but Firebase Analytics may use anonymous identifiers to measure performance. You can disable analytics from your device settings.</p>
-        
-        <h3>7. Minimum Age</h3>
-        <p>The App is not intended for children under 13. If you are under that age, you must not register. Parents or guardians are responsible for supervising minors’ use of the App.</p>
-        
-        <h3>8. Changes to This Policy</h3>
-        <p>Any changes will be posted at this URL. Continued use of the App implies acceptance.</p>
-        
-        <h3>9. Contact</h3>
-        <p>Email: bricode247@gmail.com<br>
-        Telegram: @brianvaldesgil<br>
-        Phone: +7 989 181 99 36</p>
-        
-        <hr>
-        
-        <h2>Terms and Conditions of Use</h2>
-        <p><strong>Last Updated:</strong> May 29, 2026</p>
-        
-        <h3>1. Acceptance of Terms</h3>
-        <p>By downloading or using Russia Guide, you agree to comply with these terms. If you do not agree, do not use the App.</p>
-        
-        <h3>2. License to Use</h3>
-        <p>You are granted a limited, non‑exclusive license to use the App for personal, non‑commercial purposes. You may not modify, decompile, extract the code, or distribute the App without the developer's written permission. Content (texts, images, logos) is owned by Brian Valdes Gil and protected by copyright.</p>
-        
-        <h3>3. Premium Content</h3>
-        <p>Some chapters, dark mode, unlimited notes, and other features are premium. Payment will be processed through transparent and globally recognized gateways (Google Play, RuStore, Apple, etc.). Premium access is <strong>monthly (automatically renewable subscription)</strong> and covers the current version of the App with a guarantee of future updates. <strong>Refunds are not offered</strong> for unused periods, unless required by applicable law or a proven technical defect.</p>
-        
-        <h3>4. Accuracy of Information</h3>
-        <p>The guide is updated periodically, but we do not guarantee that all information is error‑free or up‑to‑date. Some data may have become obsolete. Use it at your own discretion and verify critical information with official sources.</p>
-        
-        <h3>5. Limitation of Liability</h3>
-        <p>The developer shall not be liable for any direct, indirect, or consequential damages arising from the use or inability to use the App, including data loss, travel delays, immigration issues, or any other harm. The user assumes responsibility for verifying the information.</p>
-        
-        <h3>6. Account Deletion</h3>
-        <p>Users can delete their account from the App (Settings → Delete Account). The email will be blocked for 30 days to prevent abusive re‑registration. After that period, a new registration is allowed. Feedback data submitted before deletion is retained anonymously to improve the service.</p>
-        
-        <h3>7. Intellectual Property and Misuse</h3>
-        <p>Reproducing, distributing, or creating derivative works of the App without permission is prohibited. The trademarks "Russia Guide", the logo, and chapter names are owned by the developer. Any infringement will be pursued legally.</p>
-        
-        <h3>8. Changes to the Terms</h3>
-        <p>We may update these terms at any time. We will notify you via the App or a notice at this URL. Continued use after changes constitutes your acceptance of the new terms.</p>
-        
-        <h3>9. Applicable Law and Jurisdiction</h3>
-        <p>These terms are governed by the laws of the <strong>Russian Federation</strong>. For RuStore users, any dispute shall be submitted to the courts of Moscow. For users from other stores, the law of your country of residence will apply, but the developer reserves the right to resolve disputes in Russia if required for legal protection.</p>
-        
-        <h3>10. Contact</h3>
-        <p>Email: bricode247@gmail.com<br>
-        Telegram: @brianvaldesgil<br>
-        Phone: +7 989 181 99 36</p>
-    </div>
-
-    <!-- РУССКИЙ -->
-    <div class="lang-section">
-        <div class="lang-title">🇷🇺 Русский</div>
-        
-        <h2>Политика конфиденциальности</h2>
-        <p><strong>Последнее обновление:</strong> 29 мая 2026 г.</p>
-        <p>Брайан Вальдес Хиль (далее – "разработчик") управляет приложением Russia Guide (далее – "Приложение"). Эта страница информирует вас о нашей политике в отношении сбора, использования и раскрытия персональных данных при использовании Приложения.</p>
-        
-        <h3>1. Какие данные мы собираем</h3>
-        <p>Приложение использует Firebase Authentication и Firestore (Google) для управления пользователями и данными. Мы собираем:</p>
-        <ul>
-            <li><strong>Адрес электронной почты и пароль</strong> (для аутентификации).</li>
-            <li><strong>Имя</strong> (необязательно, только если вы используете Google Sign-In).</li>
-            <li><strong>Статус Premium</strong> (логическое значение).</li>
-            <li><strong>Секретный ключ TOTP</strong> (для двухфакторной аутентификации, хранится в зашифрованном виде в Firestore).</li>
-            <li><strong>Личные заметки</strong> (хранятся локально в SQLite, не в облаке).</li>
-            <li><strong>Предпочтение тёмной темы</strong> (хранится локально в SharedPreferences).</li>
-            <li><strong>Анонимные данные об использовании</strong> (через Firebase Analytics для улучшения опыта).</li>
-        </ul>
-        
-        <h3>2. Использование данных</h3>
-        <p>Мы используем данные для:</p>
-        <ul>
-            <li>Аутентификации и контроля доступа к премиум-функциям.</li>
-            <li>Улучшения Приложения и исправления ошибок.</li>
-            <li>Связи с вами по вопросам, связанным с вашей учётной записью (только при необходимости).</li>
-            <li>Анализа тенденций использования и производительности приложения.</li>
-        </ul>
-        
-        <h3>3. Передача данных третьим лицам</h3>
-        <p>Мы не продаём, не сдаём в аренду и не передаём ваши персональные данные третьим лицам, за исключением случаев, когда это требуется по закону или для защиты наших прав. Данные аутентификации и Firestore хранятся на серверах Google (Cloud), соответствующих международным стандартам безопасности.</p>
-        
-        <h3>4. Безопасность</h3>
-        <p>Мы используем Firebase, который применяет отраслевые стандарты безопасности. Локальные заметки не покидают ваше устройство. Однако ни одна передача данных через Интернет не является абсолютно безопасной; используйте Приложение на свой страх и риск.</p>
-        
-        <h3>5. Ваши права</h3>
-        <p>Вы можете удалить свою учётную запись через Приложение (Настройки → Удалить аккаунт). Ваши данные будут удалены из Firebase и с вашего устройства. Вы также можете запросить доступ, исправление или переносимость данных, написав на bricode247@gmail.com.</p>
-        
-        <h3>6. Файлы cookie и аналогичные технологии</h3>
-        <p>Приложение не использует традиционные файлы cookie, но Firebase Analytics может использовать анонимные идентификаторы для измерения производительности. Вы можете отключить аналитику в настройках вашего устройства.</p>
-        
-        <h3>7. Минимальный возраст</h3>
-        <p>Приложение не предназначено для детей младше 13 лет. Если вам меньше этого возраста, вы не должны регистрироваться. Родители или законные представители несут ответственность за контроль использования Приложения несовершеннолетними.</p>
-        
-        <h3>8. Изменения в настоящей Политике</h3>
-        <p>Любые изменения будут опубликованы по этому URL-адресу. Продолжение использования Приложения означает ваше согласие с этими изменениями.</p>
-        
-        <h3>9. Контакты</h3>
-        <p>Email: bricode247@gmail.com<br>
-        Telegram: @brianvaldesgil<br>
-        Телефон: +7 989 181 99 36</p>
-        
-        <hr>
-        
-        <h2>Условия использования</h2>
-        <p><strong>Последнее обновление:</strong> 29 мая 2026 г.</p>
-        
-        <h3>1. Принятие условий</h3>
-        <p>Загружая или используя Russia Guide, вы соглашаетесь соблюдать настоящие условия. Если вы не согласны, не используйте Приложение.</p>
-        
-        <h3>2. Лицензия на использование</h3>
-        <p>Вам предоставляется ограниченная неисключительная лицензия на использование Приложения в личных некоммерческих целях. Запрещается изменять, декомпилировать, извлекать код или распространять Приложение без письменного разрешения разработчика. Содержимое (тексты, изображения, логотипы) является собственностью Брайана Вальдеса Хиля и защищено авторским правом.</p>
-        
-        <h3>3. Премиум-контент</h3>
-        <p>Некоторые главы, тёмный режим, неограниченные заметки и другие функции являются премиальными. Платежи будут обрабатываться через прозрачные и всемирно признанные платёжные шлюзы (Google Play, RuStore, Apple и др.). Премиум-доступ предоставляется на <strong>ежемесячной основе (автоматически возобновляемая подписка)</strong> и распространяется на текущую версию Приложения с гарантией будущих обновлений. <strong>Возврат денежных средств за неиспользованные периоды не производится</strong>, если иное не требуется применимым законодательством или не подтверждён технический дефект.</p>
-        
-        <h3>4. Точность информации</h3>
-        <p>Руководство периодически обновляется, но мы не гарантируем, что вся информация не содержит ошибок или является актуальной. Некоторые данные могут устареть. Используйте их на своё усмотрение и проверяйте важную информацию с помощью официальных источников.</p>
-        
-        <h3>5. Ограничение ответственности</h3>
-        <p>Разработчик не несёт ответственности за любые прямые, косвенные или случайные убытки, возникшие в результате использования или невозможности использования Приложения, включая потерю данных, задержки в поездках, иммиграционные проблемы или любой другой вред. Пользователь берёт на себя ответственность за проверку информации.</p>
-        
-        <h3>6. Удаление учётной записи</h3>
-        <p>Пользователи могут удалить свою учётную запись через Приложение (Настройки → Удалить аккаунт). Адрес электронной почты будет заблокирован на 30 дней для предотвращения злоупотреблений. По истечении этого срока разрешается новая регистрация. Данные обратной связи, отправленные до удаления, хранятся анонимно для улучшения обслуживания.</p>
-        
-        <h3>7. Интеллектуальная собственность и неправомерное использование</h3>
-        <p>Запрещается воспроизводить, распространять или создавать производные работы на основе Приложения без разрешения. Товарные знаки "Russia Guide", логотип и названия глав являются собственностью разработчика. Любое нарушение будет преследоваться по закону.</p>
-        
-        <h3>8. Изменение условий</h3>
-        <p>Мы можем обновлять настоящие условия в любое время. Мы уведомим вас через Приложение или через объявление по этому URL. Продолжение использования после внесения изменений означает ваше принятие новых условий.</p>
-        
-        <h3>9. Применимое право и юрисдикция</h3>
-        <p>Настоящие условия регулируются законами <strong>Российской Федерации</strong>. Для пользователей RuStore любые споры подлежат рассмотрению в судах Москвы. Для пользователей других магазинов применяется законодательство страны вашего проживания, но разработчик оставляет за собой право разрешать споры в России, если это требуется для его правовой защиты.</p>
-        
-        <h3>10. Контакты</h3>
-        <p>Email: bricode247@gmail.com<br>
-        Telegram: @brianvaldesgil<br>
-        Телефон: +7 989 181 99 36</p>
+        <p style="font-size:14px; color:#888; margin-top:10px;">
+            Nota: Los documentos de Russia Guide ahora están en <code>russia-privacy.html</code> y <code>russia-terms.html</code>.<br>
+            Si ya tenías enlaces a <code>index.html</code>, actualiza tus enlaces a estas nuevas URLs.
+        </p>
     </div>
 
     <div class="footer">
-        <p>Russia Guide © 2026 Brian Valdes Gil - Todos los derechos reservados / All rights reserved / Все права защищены.</p>
+        <p>© 2026 Brian Valdes Gil – BriStore &amp; Russia Guide</p>
     </div>
 </body>
 </html>
